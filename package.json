@@ -1,27 +1,23 @@
 {
   "name": "stopwatch",
-  "version": "1.0.0",
+  "version": "0.0.1",
+  "private": true,
   "author": {
     "name": "Ethan Saxenian",
     "email": "ethansaxenian@gmail.com"
   },
-  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start --tunnel",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
   },
   "dependencies": {
-    "expo": "~44.0.0",
-    "expo-status-bar": "~1.2.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "react-native": "0.64.3"
+    "react": "17.0.2",
+    "react-native": "0.68.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
-  },
-  "private": true
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "metro-react-native-babel-preset": "^0.67.0"
+  }
 }

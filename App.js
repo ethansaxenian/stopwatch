@@ -1,7 +1,11 @@
-import { StatusBar } from "expo-status-bar";
-import { Pressable, StyleSheet, Text } from "react-native";
-import { useEffect, useState } from "react";
-import { useColorScheme } from "react-native";
+import {
+  Pressable,
+  StatusBar,
+  StyleSheet,
+  Text,
+  useColorScheme,
+} from "react-native";
+import React, { useEffect, useState } from "react";
 
 export default function App() {
   const [time, setTime] = useState(0);
@@ -52,7 +56,7 @@ export default function App() {
       >
         {minutes}:{seconds}.{milliseconds}
       </Text>
-      <StatusBar style="auto" />
+      <StatusBar />
     </Pressable>
   );
 }
